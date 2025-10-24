@@ -1,9 +1,14 @@
+/* Make root take full viewport height and use flex column layout */
 #root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
+
 
 .logo {
   height: 6em;
@@ -39,4 +44,8 @@
 
 .read-the-docs {
   color: #888;
+}
+
+main {
+  flex: 1; /* Makes main grow and push footer to bottom */
 }
